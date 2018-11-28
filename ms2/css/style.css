@@ -1,0 +1,152 @@
+body{
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#FABA7A;
+}
+/*Global*/
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+ul{
+ margin:0;
+ padding:0;
+}
+
+/*Header*/
+header{
+  background:#FABA7A;
+  color:#ffffff;
+  font-family:cursive, sans-serif;
+  text-shadow:1px 1px 1px #000000;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#FABA7A 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#B1F0F4;
+  font-weight:bold;
+}
+header .highlight1, header .another a{
+  color:#B5F4B1;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#FEC5FB;
+  font-weight:bold;
+}
+
+/*Showcase*/
+#showcase{
+  min-height:400px;
+  background:url('../img/bg1.jpg') no-repeat 0 -150px;
+  text-align:center;
+  color:#ffffff;
+  border-bottom:#FABA7A 3px solid;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+#showcase p{
+  font-size:20px;
+  text-shadow: 1px 1px 1px #000000;
+  overflow:hidden;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#FABA7A;
+  text-align:center;
+  text-shadow: 1px 1px 1px #000000;
+}
+.dropdown{
+  float:left;
+  overflow:hidden;
+}
+.dropdown .dropbtn{
+  border:none;
+  outline:none;
+  color:#B5F4B1;
+  text-shadow: 1px 1px 1px #000000;
+  font-weight:bold;
+  background-color:inherit;
+  font-family:inherit;
+  font-size:16px;
+  margin:0;
+}
+
+.dropdown-content{
+  display:none;
+  position:absolute;
+  background-color:#FABA7A;
+  min-width:160px;
+  border: 1px solid black;
+  z-index:1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Media Queries*/
+@media(max-width: 768px){
+  /* header #branding,
+  header nav,
+  header nav li{
+    float:none;
+    text-align:center;
+    width:100%;
+  } */
+  body{
+    display:none;
+    background:url('../img/pepehands.png') no-repeat;
+  }
+}
